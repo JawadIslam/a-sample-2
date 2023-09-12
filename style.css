@@ -62,7 +62,6 @@ nav ul li {
   color: var(--secondary-color);
   text-transform: uppercase;
   font-size: 1.02rem;
-  text-transform: uppercase;
   border: 1px solid transparent;
   border-radius: 3px;
   height: 50px;
@@ -127,15 +126,14 @@ nav ul li {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 200vh;
+  height: 160vh;
   background-image: url();
   background: 100%;
   animation: changeImage 20s linear infinite;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 100%;
-  height: 100vh;
+  /* margin-top:20vh; */
   /* background-size: contain; */
 }
 
@@ -152,8 +150,8 @@ nav ul li {
 }
 
 .slider .massage p {
+  margin-top: 50vh;
 
-  padding: 15vh 5vh 10vh 5vh;
   height: 140vh;
   width: 70vw;
   font-size: 4rem;
@@ -191,32 +189,31 @@ nav ul li {
 .goal {
   height: 50vh;
   width: 90vw;
-  background-color: var(--primary-color);
-  border-radius: 0.4rem;
+  background-color:#eeeeed;
   margin-bottom: -10%;
   text-align: justify;
   justify-content: center;
   position: relative;
-  border: 0.1rem solid var(--secondary-color);
+    border-radius: 0.4rem;
+  /* border: 0.1rem solid var(--secondary-color); */
 }
 
 .goal p {
 padding: 6vh;
-
   height: 40vh;
   width: 90vw;
   font-size: 1.2rem;
   font-family: "Source Code Pro", monospace;
   color: var(--secondary-color);
-  align-items: center;
+  align-items: center;  
+
 }
 
 .goal:hover {
-  height: 50vh;
-  width: 90vw;
+
   background-color: rgb(237, 235, 235);
-  border-radius: 0.4rem;
-  margin-bottom: -10%;
+  /* border-radius: 0.4rem; */
+
   box-shadow: 0.125rem 0.25rem 0.125rem 0.25rem #a09f9f;
   transition: 0.8s;
 }
@@ -230,11 +227,11 @@ padding: 6vh;
 
 .tab-contaner {
   display: flex;
-  height: 200vh;
+  height: 130vh;
   width: 100%;
   justify-content: space-around;
   align-items: center;
-  ;
+  
 
 }
 
@@ -242,7 +239,8 @@ padding: 6vh;
   margin: 0;
   height: 35vh;
   width: 28vw;
-  border-radius: 6px;
+  border-radius: .4rem;
+
 }
 
 .tab {
@@ -250,7 +248,8 @@ padding: 6vh;
   width: 28vw;
   box-shadow: 4px solid #020258;
   background-color: #e8e8e8;
-  border-radius: 6px;
+  border-radius: .4rem;
+
 
 }
 
@@ -260,6 +259,7 @@ padding: 6vh;
   box-shadow: 0px 0px 8px #141416;
   transition: 0.4s ease-in;
   cursor: pointer;
+  border-radius: .4rem;
 
 }
 
@@ -267,6 +267,7 @@ padding: 6vh;
   text-align: center;
   color: var(--secondary-color);
   font-size: 1.25rem;
+
 }
 
 .tab p {
@@ -284,6 +285,7 @@ padding: 6vh;
   align-items: center;
   height: 100vh;
   background-color: var(--secondary-color);
+ 
 }
 
 h2 {
@@ -296,9 +298,55 @@ h2 {
 }
 /* 
   ............................news............................... */
-  .news{
-    height: 50vh;
-    background-color: var(--primary-color);
+
+.news{
+  display: flex;
+  flex-direction: row;
+  background-color:#e8e8e8;
+  width: 100%;
+  height: 30vh;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+  .news-ticker {
+    background-color:#e8e8e8;
+    color:var(--secondary-color);
+    overflow: hidden;
+    width: 60vw;
+    white-space: nowrap;
+
+  }
+
+  #news-btn{
+    margin: 2vh;
+    height: 22vh;
+    width: 18vw;
+    border:none;
+    background-color: var(--secondary-color);
+
+  }
+
+  #news-btn a{
+    font-family: "Source Code Pro", monospace;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+  
+  }
+  .ticker-content {
+    display: inline-block;
+    animation: ticker 20s linear infinite; /* Adjust speed and duration as needed */
+    font-size: 1.1rem;
+  }
+  
+  @keyframes ticker {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
   }
 /* ............................................footer-section................................................... */
 
@@ -649,6 +697,8 @@ h2 {
   }
 }
 
+
+
 @media only screen and (max-width: 420px) {
 
   .HYF-logo-formediaquary {
@@ -797,6 +847,33 @@ h2 {
     width:70vw;
     font-family: "Source Code Pro", monospace;
     font-size: 1.5rem;
+
+  }
+
+  .news{
+    display: flex;
+    flex-direction: row;
+    background-color:#e8e8e8;
+    width: 100%;
+    height: 15vh;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  #news-btn{
+    margin: 2vh;
+    height: 8vh;
+    width: 25vw;
+    border:none;
+    background-color: var(--secondary-color);
+
+  }
+  #news-btn a{
+    font-family: "Source Code Pro", monospace;
+    color: var(--primary-color);
+    font-size: .6rem;
+    text-align: center;
 
   }
 
