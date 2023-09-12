@@ -1,4 +1,5 @@
 @import url("palette.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Source+Code+Pro:wght@600&display=swap');
 
 * {
   margin: 0;
@@ -6,7 +7,8 @@
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
+  
 }
 
 /* ...........................Navigation section................ */
@@ -262,7 +264,7 @@ nav ul li {
 
 .tab p {
   height: 20vh;
-  width: 62vh;
+  width: 60vh;
   margin: 0px 4px 1px 6px;
   font-size: 0.8rem;
   text-align: center;
@@ -624,16 +626,17 @@ nav ul li {
   
   
   .goal {
-    height: 22vh;
+    height: 16vh;
     width: 100%;
   }
 
   .goal:hover{
-    height: 22.2vh;
+    height: 16.2vh;
     width: 100.5%;
   }
  .goal p{
- margin: 2vh 2vh 2vh 5vh;
+  font-size: 0.8rem;
+ margin: 2vh 2vh 2vh 4vh;
  }
 
  nav {
@@ -673,33 +676,34 @@ nav ul li {
   font-size: 18px;
 }
   .tab {
-    height: 32vh;
-    width: 60vw;
+    height: 40vh;
+    width: 100%;
     align-items: center;
 
   }
   .tab:hover{
-    height: 32.2vh;
-    width: 60.2vw;
+    height: 40.2vh;
+    width: 100.2%;
   }
   .tab-contaner {
 
-    height: 120vh;
+    height: 180vh;
     width: 100%;
-    margin-top: 10vh
+    margin-top: 30vh
 
   
   }
   .tabimage {
     margin: 0;
-    height: 18vh;
+    height: 23vh;
+    width: 100%;
    
   }
   
   .tab p {
-    height: 15vh;
-    width: 46vw;
-    font-size: 0.6.5rem;
+    height: 13vh;
+    width: 80vw;
+    font-size: 0.9rem;
    text-align: center;
   margin: 0px 2px 2px 27px;
     font-family: "Poppins", sans-serif;
