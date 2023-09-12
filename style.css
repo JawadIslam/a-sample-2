@@ -790,7 +790,7 @@ h2 {
     height: 60vh;
     background-color: var(--secondary-color);
   }
-  h2 {
+    .quotae h2 {
     color: var(--primary-color);
     text-align: center; /* Center the text within h2 */
     padding: 15px; /* Add padding around the h2 element as needed */
