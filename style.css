@@ -195,7 +195,7 @@ nav ul li {
   justify-content: center;
   position: relative;
     border-radius: 0.4rem;
-  border: 0.1rem solid var(--secondary-color);
+  /* border: 0.1rem solid var(--secondary-color); */
 }
 
 .goal p {
@@ -847,6 +847,7 @@ h2 {
     width:70vw;
     font-family: "Source Code Pro", monospace;
     font-size: 1.5rem;
+  
 
   }
 
@@ -872,8 +873,9 @@ h2 {
   #news-btn a{
     font-family: "Source Code Pro", monospace;
     color: var(--primary-color);
-    font-size: .8rem;
+    font-size: .6rem;
     text-align: center;
+    text-align: justify;
 
   }
 
