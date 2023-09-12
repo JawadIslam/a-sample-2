@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <nav>
+
+    <img class="HYF-logo" src="images/logo.png" alt="Hack your future Bangladesh">
+    <img class="HYF-logo-formediaquary" src="images/img1.jpg" alt="Hack your future Bangladesh">
+
+    <ul id="mylist">
+      <li> <i class="fa fa-chevron-circle-left" id="collaspasbtn"></i></li>
+      <li><a href=""><button class="sub-button" onclick="">apply</button></li>
+      <li><a href="volunteer.html"><button class="sub-button" onclick="">volunteer</button></li>
+      <li><a href="about.html"><button class="sub-button" onclick="">about</button></a></li>
+      <li><a href=""><button class="sub-button" onclick="">curriculum</button></a></li>
+
+      <li><button class="Primary-button" onclick="">Support</button></li>
+    </ul>
+    <i class="fa fa-bars" id="icon"></i>
+
+
+
+
+    </label>
+  </nav>
+
+  <div class="slider">
+    <div class="massage">
+      <P>Helping New Talent Into The Tech World</P>
+    </div>
+
+    <div class="goal">
+      <p>
+        HackYourFuture supports refugees, asylum seekers and disadvantaged groups with limited access to further
+        education and the Danish labour market in acquiring the necessary skills to become web developers and entering a
+        very in-demand field.</p>
+
+    </div>
+  </div>
+
+
+  <div class="tab-contaner">
+
+    <div class="tab">
+      <img src="images/fimg1.jpg" alt="" class="tabimage">
+      <h1>Who We are</h1>
+      <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        nisi nam molestias nesciunt necessitatibus cupiditate </p>
+    </div>
+    <div class="tab">
+      <img src="images/fimg2.jpg" alt="" class="tabimage">
+      <h1>Our goal</h1>
+      <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        nisi nam molestias nesciunt necessitatibus cupiditate </p>
+    </div>
+
+    <div class="tab">
+      <img src="images/fimg3.jpg" alt="" class="tabimage">
+      <h1>The Program</h1>
+      <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        nisi nam molestias nesciunt necessitatibus cupiditate </p>
+    </div>
+
+  </div>
+
+
+
+  <footer>
+    <div class="footer-container">
+      <div class="f-text">
+        <P> HackYourFuture Bangaldesh| phn: 015263 | cph@hackyourfuture.school</P>
+      </div>
+      <div class="f-row">
+        <img class="social-logo" src="images/logo1.png" alt="">
+
+        <img class="social-logo" src="images/logo2.png" alt="">
+
+        <img class="social-logo" src="images/logo3.png" alt="">
+      </div>
+    </div>
+  </footer>
+  <script>
+
+
+
+    const icon = document.getElementById('icon');
+    const mylist = document.getElementById('mylist');
+
+    let isExpanded = true;
+
+    icon.addEventListener('click', () => {
+
+
+
+      if (isExpanded) {
+        mylist.style.left = '0';
+      }
+      isExpanded = ture;
+    });
+
+
+    const collaspas = document.getElementById('collaspasbtn');
+
+    collaspasbtn.addEventListener('click', () => {
+
+      if (isExpanded = true) {
+        mylist.style.left = '-800px';
+      }
+
+      // Toggle the state
+
+    });
+
+  </script>
+</body>
+
+</html>
