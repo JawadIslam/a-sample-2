@@ -471,8 +471,7 @@ nav ul li {
   .tab-contaner {
     margin-top: 20vh;
     height: 300vh;
-    width: 100%;
-
+    width: 80%;
     flex-direction: column;
   }
 
@@ -482,7 +481,7 @@ nav ul li {
     box-shadow: 4px solid #020258;
     background-color: #e8e8e8;
     border-radius: 6px;
-    margin-top: 5vh;
+    margin-top: 2vh;
   }
 
   .tab:hover {
