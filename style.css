@@ -195,7 +195,7 @@ nav ul li {
   justify-content: center;
   position: relative;
     border-radius: 0.4rem;
-  /* border: 0.1rem solid var(--secondary-color); */
+  border: 0.1rem solid var(--secondary-color);
 }
 
 .goal p {
