@@ -20,7 +20,7 @@ nav {
   height: 20vh;
   width: 100%;
   z-index: 2;
-position: fixed;
+  position: fixed;
 }
 
 .HYF-logo-formediaquary {
@@ -42,7 +42,6 @@ position: fixed;
 
 button a {
   color: var(--secondary-color)
-  
 }
 
 nav ul {
@@ -133,6 +132,7 @@ nav ul li {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
   /* margin-top:20vh; */
   /* background-size: contain; */
 }
@@ -140,9 +140,9 @@ nav ul li {
 .slider .massage {
   display: flex;
   height: 90%;
-  width: 90%;
+  width: 100%;
   padding: 4vh;
-
+  background-color: #1010123d;
   font-family: "Source Code Pro", monospace;
   flex-direction: column;
   align-items: center;
@@ -188,31 +188,30 @@ nav ul li {
 .goal {
   height: 50vh;
   width: 90vw;
-  background-color:#eeeeed;
+  background-color: #eeeeed;
   margin-bottom: -10%;
   text-align: justify;
   justify-content: center;
   position: relative;
-    border-radius: 0.4rem;
+  border-radius: 0.4rem;
   /* border: 0.1rem solid var(--secondary-color); */
 }
 
 .goal p {
-padding: 6vh;
+  padding: 6vh;
   height: 40vh;
   width: 90vw;
   font-size: 1.2rem;
   font-family: "Source Code Pro", monospace;
   color: var(--secondary-color);
-  align-items: center;  
+  align-items: center;
 
 }
 
 .goal:hover {
 
   background-color: rgb(237, 235, 235);
-  /* border-radius: 0.4rem; */
-
+  border-radius: 0.4rem;
   box-shadow: 0.125rem 0.25rem 0.125rem 0.25rem #a09f9f;
   transition: 0.8s;
 }
@@ -230,7 +229,7 @@ padding: 6vh;
   width: 100%;
   justify-content: space-around;
   align-items: center;
-  
+
 
 }
 
@@ -248,6 +247,8 @@ padding: 6vh;
   box-shadow: 4px solid #020258;
   background-color: #e8e8e8;
   border-radius: .4rem;
+  text-align: center;
+  justify-content: center;
 
 
 }
@@ -277,76 +278,89 @@ padding: 6vh;
   text-align: center;
 
 }
+
 /* .........................................................quotae...................................................... */
 .quotae {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
   height: 100vh;
   background-color: var(--secondary-color);
- 
+
 }
 
 h2 {
   color: var(--primary-color);
-  text-align: center; /* Center the text within h2 */
-  padding: 20px; /* Add padding around the h2 element as needed */
-  width:70vw;
-    font-family: "Source Code Pro", monospace;
+  text-align: center;
+  /* Center the text within h2 */
+  padding: 20px;
+  /* Add padding around the h2 element as needed */
+  width: 70vw;
+  font-family: "Source Code Pro", monospace;
   font-size: 2rem;
 }
+
 /* 
   ............................news............................... */
 
-.news{
+.news {
   display: flex;
-  flex-direction: row;
-  background-color:#e8e8e8;
+  flex-direction: column;
+  background-color: #e8e8e8;
   width: 100%;
-  height: 30vh;
+  height: 20vh;
   justify-content: center;
   align-items: center;
-  
+
 }
 
-  .news-ticker {
-    background-color:#e8e8e8;
-    color:var(--secondary-color);
-    overflow: hidden;
-    width: 60vw;
-    white-space: nowrap;
+.news-ticker {
 
+  background-color: #e8e8e8;
+  color: var(--secondary-color);
+  overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
+
+}
+
+
+.ticker-content {
+  display: inline-block;
+  animation: ticker 20s linear infinite;
+  /* Adjust speed and duration as needed */
+
+  font-size: 1.1rem;
+}
+
+@keyframes ticker {
+  0% {
+    transform: translateX(100%);
   }
 
-  #news-btn{
-    margin: 2vh;
-    height: 22vh;
-    width: 18vw;
-    border:none;
-    background-color: var(--secondary-color);
+  100% {
+    transform: translateX(-100%);
+  }
+}
 
-  }
+/* .........................................profile................................ */
+.profile {
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 
-  #news-btn a{
-    font-family: "Source Code Pro", monospace;
-    color: var(--primary-color);
-    font-size: 1rem;
-  
-  }
-  .ticker-content {
-    display: inline-block;
-    animation: ticker 20s linear infinite; /* Adjust speed and duration as needed */
-    font-size: 1.1rem;
-  }
-  
-  @keyframes ticker {
-    0% {
-      transform: translateX(100%);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  }
+}
+
+.profile h2 {
+  margin: 2vh;
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+
+
+
+}
+
 /* ............................................footer-section................................................... */
 
 .footer-container {
@@ -527,52 +541,44 @@ h2 {
     width: 100%;
   }
 
-  .goal:hover {
-    height: 60vh;
-    width: 100%;
-  }
-
-  .goal p {
-    margin: 3vh 5vh 0vh 5vh;
-    align-items: center;
+  .goal {
     height: 30vh;
-    width: 80vw;
+    width: 90vw;
+  
+  }
+  
+  .goal p {
+    padding: 5vh;
+    height: 30vh;
+    width: 90vw;
     font-size: 1rem;
-    /* word-wrap: break-word; */
-
+  }
+  
+  .goal:hover {
+    height: 30vh;
+    width: 90vw;
   }
 
   /* ...................................Tabmedia....................................... */
   .tab-contaner {
-    margin-top: 20vh;
-    height: 120vh;
+    margin-top: 30vh;
+    height: 300vh;
     width: 100%;
-
     flex-direction: column;
   }
 
   .tab {
     height: 90vh;
     width: 50vw;
-    box-shadow: 4px solid #020258;
-    background-color: #e8e8e8;
-    border-radius: 6px;
-    margin-top: 5vh;
   }
 
   .tab:hover {
     height: 90.12vh;
     width: 50.12vw;
-    box-shadow: 0px 0px 8px #141416;
-    transition: 0.3s ease-in;
-    cursor: pointer;
-
   }
 
   .tab h1 {
-    text-align: center;
-    margin-top: 5vh;
-    color: var(--secondary-color);
+    margin-top: 4vh;
     font-size: 1.25rem;
   }
 
@@ -580,12 +586,10 @@ h2 {
     height: 30vh;
     width: 46vw;
     font-size: 0.8rem;
-    text-align: center;
-    margin: 0vh 1vh 0vh 2vh;
+    margin:4vh;
   }
-
   .tabimage {
-    height: 45vh;
+    height: 50vh;
     width: 50vw;
   }
 
@@ -596,39 +600,16 @@ h2 {
     display: flex;
     width: 100%;
     height: 40vh;
-    background: var(--secondary-color);
+    justify-content: center;
     flex-direction: column;
     align-items: center;
-
   }
 
   .footer-container .f-text {
-    align-items: center;
-    color: var(--primary-color);
-    text-align: center;
     font-size: .8rem;
-
   }
 
-  .social-logo {
-    height: 30px;
-    width: 30px;
-    align-items: center;
-  }
-
-  .f-row {
-    margin-top: -20px;
-    display: flex;
-
-  }
-
-  .goal p {
-    margin: 7vh 5vh 5vh 10vh;
-    align-items: center;
-    height: 30vh;
-    width: 80vw;
-    font-size: 1rem;
-  }
+ 
 
 }
 
@@ -651,7 +632,7 @@ h2 {
     width: 75vw;
     font-size: 1rem;
   }
-  
+
   .goal:hover {
     height: 60vh;
     width: 90vw;
@@ -662,7 +643,7 @@ h2 {
   .tab-contaner {
     margin-top: 40vh;
     height: 300vh;
-   
+
 
   }
 
@@ -689,6 +670,7 @@ h2 {
     width: 50vw;
     margin: 0vh 0vh 0vh 5vh;
   }
+
   .quotae h2 {
     font-size: 1.2rem;
   }
@@ -712,7 +694,7 @@ h2 {
 
 
   .goal {
-    height:28vh;
+    height: 28vh;
     width: 100%;
     margin-bottom: 0%;
   }
@@ -724,7 +706,7 @@ h2 {
   }
 
   .goal p {
-    height:27.5vh;
+    height: 27.5vh;
     margin: 0;
     padding: 3vh;
     font-size: 1rem;
@@ -799,7 +781,7 @@ h2 {
   .tab p {
     height: 30vh;
     width: 80vw;
-    font-size:1rem;
+    font-size: 1rem;
     text-align: center;
     margin: 0px 2px 2px 26px;
     font-family: "Poppins", sans-serif;
@@ -830,46 +812,32 @@ h2 {
     height: 5vh;
 
   }
+
   .quotae {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
     height: 60vh;
     background-color: var(--secondary-color);
   }
+
   .quotae h2 {
     color: var(--primary-color);
-    text-align: center; /* Center the text within h2 */
-    padding: 15px; /* Add padding around the h2 element as needed */
-    width:70vw;
+    text-align: center;
+    /* Center the text within h2 */
+    padding: 15px;
+    /* Add padding around the h2 element as needed */
+    width: 70vw;
     font-family: "Source Code Pro", monospace;
     font-size: 1.5rem;
   }
 
-  .news{
-    display: flex;
-    flex-direction: row;
-    background-color:#e8e8e8;
-    width: 100%;
-    height: 15vh;
-    justify-content: center;
-    align-items: center;
+  .news {
+    height: 10vh;
   }
-  
-  #news-btn{
-    margin: 1vh;
-    height: 8vh;
-    width: 27vw;
-    border:none;
-    background-color: var(--secondary-color);
 
-  }
-  #news-btn a{
-    font-family: "Source Code Pro", monospace;
-    color: var(--primary-color);
-    font-size: .7rem;
-    padding: 3px;
-    text-align: justify;
+  .profile h2 {
+    font-size: 1rem;
   }
 
 }
