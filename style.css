@@ -129,7 +129,7 @@ nav ul li {
   height: 160vh;
   background-image: url();
   background: 100%;
-  animation: changeImage 20s linear infinite;
+  animation: changeImage 30s linear infinite;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -151,7 +151,6 @@ nav ul li {
 
 .slider .massage p {
   margin-top: 50vh;
-
   height: 140vh;
   width: 70vw;
   font-size: 4rem;
@@ -331,7 +330,7 @@ h2 {
   #news-btn a{
     font-family: "Source Code Pro", monospace;
     color: var(--primary-color);
-    font-size: 1.1rem;
+    font-size: 1rem;
   
   }
   .ticker-content {
@@ -634,41 +633,36 @@ h2 {
 }
 
 @media only screen and (max-width: 550px) {
-  .goal {
-    height: 150vh;
-    width: 100%;
-
-
-  }
 
   #collaspasbtn {
     margin-left: 70vh;
     font-size: 28px;
-    color: var(--primary-color);
     margin-bottom: 30px;
-    cursor: pointer;
+  }
+
+  .goal {
+    height: 55vh;
+    width: 90vw;
   }
 
   .goal p {
-    margin: 3vh 5vh 5vh 7vh;
-    align-items: center;
-    height: 30vh;
-    width: 80vw;
-    font-size: .9rem;
+    padding: 1.5vh;
+    height: 55vh;
+    width: 75vw;
+    font-size: 1rem;
+  }
+  
+  .goal:hover {
+    height: 60vh;
+    width: 90vw;
   }
 
-  .slider .massage p {
-    margin-top: 5vh;
-    padding: 8vh 5vh 10vh 5vh;
-    height: 140vh;
-    width: 90vw;
-    font-size: 2.8rem;
-  }
+
 
   .tab-contaner {
     margin-top: 40vh;
-    /* height: 300vh;
-    */
+    height: 300vh;
+   
 
   }
 
@@ -695,6 +689,10 @@ h2 {
     width: 50vw;
     margin: 0vh 0vh 0vh 5vh;
   }
+  .quotae h2 {
+    font-size: 1.2rem;
+  }
+
 }
 
 
@@ -703,8 +701,8 @@ h2 {
 
   .HYF-logo-formediaquary {
     margin: 1.2vh 2vh 1vh 2vh;
-    height: 7vh;
-    width: 9vh;
+    height: 7.5vh;
+    width: 11vh;
   }
 
   nav {
@@ -738,9 +736,8 @@ h2 {
 
 
   .slider {
-
     width: 100%;
-    height: 50vh;
+    height: 60vh;
   }
 
   .slider .massage p {
@@ -847,8 +844,6 @@ h2 {
     width:70vw;
     font-family: "Source Code Pro", monospace;
     font-size: 1.5rem;
-  
-
   }
 
   .news{
@@ -859,13 +854,12 @@ h2 {
     height: 15vh;
     justify-content: center;
     align-items: center;
-    
   }
   
   #news-btn{
-    margin: 2vh;
+    margin: 1vh;
     height: 8vh;
-    width: 25vw;
+    width: 27vw;
     border:none;
     background-color: var(--secondary-color);
 
@@ -873,10 +867,9 @@ h2 {
   #news-btn a{
     font-family: "Source Code Pro", monospace;
     color: var(--primary-color);
-    font-size: .6rem;
-    text-align: center;
+    font-size: .7rem;
+    padding: 3px;
     text-align: justify;
-
   }
 
 }
