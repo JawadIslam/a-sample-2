@@ -128,7 +128,7 @@ nav ul li {
   height: 160vh;
   background-image: url();
   background: 100%;
-  animation: changeImage 30s linear infinite;
+  animation: changeImage 50s linear infinite;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
